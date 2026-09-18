@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Job Tracker</h1>
+        <p>Track your job applications easily</p>
+    </header>
+
+
+    <main>
+
+        <!-- ADD / EDIT JOB FORM -->
+        <section class="job-form">
+
+            <h2>Add New Job</h2>
+
+            <form id="jobForm">
+
+                <input
+                    type="text"
+                    id="company"
+                    placeholder="Company Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="role"
+                    placeholder="Job Role"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+                <select id="status">
+
+                    <option value="Applied">
+                        Applied
+                    </option>
+
+                    <option value="Interview">
+                        Interview
+                    </option>
+
+                    <option value="Selected">
+                        Selected
+                    </option>
+
+                    <option value="Rejected">
+                        Rejected
+                    </option>
+
+                </select>
+
+                <button
+                    type="submit"
+                    id="submitBtn">
+                    Add Job
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- DASHBOARD STATISTICS -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <h3>Total Jobs</h3>
+
+                <p id="totalJobs">0</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Applied</h3>
+
+                <p id="appliedJobs">0</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Interviews</h3>
+
+                <p id="interviewJobs">0</p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Selected</h3>
+
+                <p id="selectedJobs">0</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH AND FILTER -->
+        <section class="controls">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search company or job role..."
+            >
+
+
+            <select id="filterStatus">
+
+                <option value="All">
+                    All Status
+                </option>
+
+                <option value="Applied">
+                    Applied
+                </option>
+
+                <option value="Interview">
+                    Interview
+                </option>
+
+                <option value="Selected">
+                    Selected
+                </option>
+
+                <option value="Rejected">
+                    Rejected
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- JOB APPLICATION LIST -->
+        <section class="job-list">
+
+            <h2>My Applications</h2>
+
+            <div id="jobContainer"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
