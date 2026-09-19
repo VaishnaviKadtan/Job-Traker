@@ -4,7 +4,7 @@ A simple and responsive web application to manage and track job applications in 
 
 ## 🚀 Live Demo
 
-https://vaishnavikadtan.github.io/Job-Tracker/
+https://vaishnavikadtan.github.io/Job-Traker/
 
 ## 📂 GitHub Repository
 
